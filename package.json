@@ -1,7 +1,7 @@
 {
   "name": "interaction",
   "version": "0.1.0",
-  "homepage": "./",
+  "homepage": "http://urbanGY.github.io/interaction",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.2.0",
@@ -25,7 +25,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +49,7 @@
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.1.8",
-    "craco-alias": "^3.0.1"
+    "craco-alias": "^3.0.1",
+    "gh-pages": "^3.2.3"
   }
 }
