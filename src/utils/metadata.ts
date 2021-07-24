@@ -12,7 +12,7 @@ const toBeContinue = (() => {
 
 const meta = [
   {
-    link: '/panorama',
+    link: '/interaction/panorama',
     title: '뉴욕 길거리',
     subTitle: '적당한 속도로 스크롤..!',
   },

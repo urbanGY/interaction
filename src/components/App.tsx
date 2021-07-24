@@ -14,11 +14,11 @@ function App() {
   return (
     <>
       <div className={cx('container')}>
-        {metaDataList.map((item) => (
-          <Item item={item} />
+        {metaDataList.map((item, idx) => (
+          <Item item={item} key={`${item.title}_${idx}`} />
         ))}
       </div>
-      <Route exact path="/panorama" component={Panorama} />
+      <Route exact path="/interaction/panorama" component={Panorama} />
     </>
   )
 }
