@@ -14,7 +14,7 @@ const Light = () => {
 
   return (
     <div className={cx('article')}>
-      <input className={cx('input')} type="text" value={text} onChange={handleInput} autoFocus />
+      <input className={cx('input')} type="text" value={text} onChange={handleInput} autoFocus spellCheck={false} />
     </div>
   )
 }
