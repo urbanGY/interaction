@@ -1,0 +1,37 @@
+$background-color: #07252d;
+$shadow-color: #40b86e;
+
+.article {
+  background: $background-color;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .input {
+    width: 100%;
+    line-height: 100vh;
+    background-color: inherit;
+    border: none;
+    vertical-align: bottom;
+
+    position: relative;
+    font-size: 16em;
+    letter-spacing: 15px;
+    color: $background-color;
+    text-transform: uppercase;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    text-shadow: 0 0 10px $shadow-color, 0 0 20px $shadow-color, 0 0 40px $shadow-color, 0 0 80px $shadow-color,
+      0 0 160px $shadow-color;
+    ime-mode: active;
+
+    caret-color: #acd8bd;
+  }
+
+  .input:focus {
+    outline: none;
+  }
+}
